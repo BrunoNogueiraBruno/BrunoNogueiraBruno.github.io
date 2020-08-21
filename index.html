@@ -7,55 +7,103 @@
 
     <style>
 
-        body {;
+        body {
             margin: 0;
         }
 
+        .container {
+            position: solid;
+            height: 500px;
+            background-color: whitesmoke;
+
+        }
+
         .sobre {
-            background-color: #f1ece2;
+            padding: 30px;
             text-align: center;
+            float: left;
         }
 
         .sobre p {
             font-size: 20px;
         }
         .sobre b {
-            color: red;
+            color: #677423;
         }
 
         .nav-bar {
+            text-align: center;
             top: 0;
             width: 100%;
             position: fixed;
             background-color:#3a302c;
             padding: 10px;
             color: whitesmoke;
+            z-index: 9999;
         }
 
         .nav-bar a {
             font-size: 1.5em;
             text-decoration: none;
             color: whitesmoke;
+
         }
 
         .bar {
-            height: 60px;
-            background-color: #677423;
-        }
-
-        .bar2 {
             height: 10px;
             background-color: #3a302c;
         }
-        
-        h1 {
+
+       
+        .container h1 {
+            position: relative;
+            top: 30px;
+            text-align: center;
+            font-size: 2.5em;
             font-family: serif;
             letter-spacing: 10px;
+            color: #3a302c;
         }
 
         .foto-perfil {
             border-radius: 50%;
+
+        }
+
+        .faco {
             
+        }
+
+        .icon_pixel-art {
+            position: relative;
+            float: left;
+        }
+
+        .icon_photoshop {
+            position: relative; 
+            float: left;
+        }
+
+        .icon_ilustration {
+            position: relative;
+            float:left;
+        }
+
+        .icon_html {
+            position: relative;
+            float:left;
+        }
+
+        .icon_shell {
+            position: relative;
+            float:left;
+        }
+
+        .exp {
+            text-align: center;
+            position: relative;
+            float: left;
+            left: 10%;
         }
 
     </style>
@@ -64,16 +112,20 @@
 </head>
 <body>
 
-<div class="sobre">
     <div class="nav-bar">
     <a href="#sobre"> Quem sou eu</a> | 
     <a href="#faco">O que eu faço</a> |
     <a href="#passei">Por onde passei</a><br>
     </div>
-<div class="bar">
-</div>
+
+    
+
+
+<div class="container">
 
     <h1>Bruno Leonardo Nogueira</h1>
+    <div class="sobre">
+
 
     <img src="./perfil.jpg" class="foto-perfil" width="200px" alt="Foto de Bruno Leonardo Nogueira">
     <h2 id="sobre">Quem sou eu</h2>
@@ -83,51 +135,7 @@
 
 </div>
 
-
-<div class="bar2"></div>
-
-<div class="faco">
-    <h2 id="faco">O que eu faço</h2>
-
-    <table>
-        <tr>
-            <th>
-                <strong>Pixel Art</strong>
-            </th>
-            <th>
-                Photoshop 
-            </th>
-            <th>
-                <strong>Ilustração</strong>
-            </th>
-            <th>
-                Html 
-            </th>
-            <th>
-                Shell Script
-            </th>
-        </tr>
-
-        <tr>
-            <th>
-                <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
-            </th>
-            <th>
-                <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
-            </th>
-            <th>
-                <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
-            </th>
-            <th>
-                <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
-            </th>
-            <th>
-                <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
-            </th>
-        </tr>
-    </table>
-</div>
-    
+<div class="exp">
     <h2 id="passei">Por onde passei</h2>
 
     <table>
@@ -138,9 +146,42 @@
                 <img src="./unoeste.png" width="100px"></a></th>
         </tr>
     </table>
-    
+</div>
+</div>
 
 
+<div class="bar"></div>
+
+
+<div class="faco">
+    <h2 id="faco">O que eu faço</h2>
+
+    <div class="icon_pixel-art">
+        <strong>Pixel Art</strong><br>
+        <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
+    </div>
+
+    <div class="icon_photoshop">
+        <strong>Photoshop</strong><br>
+        <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
+    </div>
+
+    <div class="icon_ilustration">
+        <strong>Ilustração</strong><br>
+        <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
+    </div>
+
+    <div class="icon_html">
+        <strong>HTML</strong><br>
+        <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
+    </div>
+
+    <div class="icon_shell">
+        <strong>Shell Script</strong><br>
+        <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
+    </div>
+               
+</div>
 
 </body>
 </html>
