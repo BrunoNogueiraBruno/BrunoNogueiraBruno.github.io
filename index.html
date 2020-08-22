@@ -13,22 +13,37 @@
 
         .container {
             position: solid;
-            height: 500px;
+            height: 480px;
             background-color: whitesmoke;
 
         }
 
+        .container h1 {
+            position: relative;
+            top: 30px;
+            text-align: center;
+            font-size: 2.5em;
+            font-family: serif;
+            letter-spacing: 10px;
+            color: #3a302c;
+        }
+
         .sobre {
+            padding: 30px;
+            text-align: justify;
+        }
+
+        .basic-info {
             padding: 30px;
             text-align: center;
             float: left;
         }
 
-        .sobre p {
+        .basic-info p {
             font-size: 20px;
         }
-        .sobre b {
-            color: #677423;
+        .basic-info b {
+            color:brown;
         }
 
         .nav-bar {
@@ -53,25 +68,18 @@
             height: 10px;
             background-color: #3a302c;
         }
-
        
-        .container h1 {
-            position: relative;
-            top: 30px;
-            text-align: center;
-            font-size: 2.5em;
-            font-family: serif;
-            letter-spacing: 10px;
-            color: #3a302c;
-        }
 
         .foto-perfil {
             border-radius: 50%;
 
         }
 
+
         .faco {
-            
+            text-align: center;
+            width: 100%;
+
         }
 
         .icon_pixel-art {
@@ -124,16 +132,62 @@
 <div class="container">
 
     <h1>Bruno Leonardo Nogueira</h1>
-    <div class="sobre">
+    <div class="basic-info">
 
 
     <img src="./perfil.jpg" class="foto-perfil" width="200px" alt="Foto de Bruno Leonardo Nogueira">
     <h2 id="sobre">Quem sou eu</h2>
     <p><em><b>B</b>rasileiro natural de <b>P</b>residente <b>P</b>rudente - <b>SP</b></em>, <strong>Historiador</strong> por formação (2017-2020) <br>e futuro <strong>Desenvolvedor</strong> (2020-2021).</p>
     
-    <br>
+    </div>
+
+
+    <div class="sobre">
+
+        <h2 id="sobre">Lorem Ipsum</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+    <div class="faco">
+            <div class="icon_pixel-art">
+                <strong>Pixel Art</strong><br>
+                <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
+            </div>
+        
+            <div class="icon_photoshop">
+                <strong>Photoshop</strong><br>
+                <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
+            </div>
+        
+            <div class="icon_ilustration">
+                <strong>Ilustração</strong><br>
+                <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
+            </div>
+        
+            <div class="icon_html">
+                <strong>HTML</strong><br>
+                <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
+            </div>
+        
+            <div class="icon_shell">
+                <strong>Shell Script</strong><br>
+                <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
+            </div>
+                       
+        </div>
+    </div>
+
+
 
 </div>
+
+
+<div class="bar"></div>
+
 
 <div class="exp">
     <h2 id="passei">Por onde passei</h2>
@@ -146,41 +200,6 @@
                 <img src="./unoeste.png" width="100px"></a></th>
         </tr>
     </table>
-</div>
-</div>
-
-
-<div class="bar"></div>
-
-
-<div class="faco">
-    <h2 id="faco">O que eu faço</h2>
-
-    <div class="icon_pixel-art">
-        <strong>Pixel Art</strong><br>
-        <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
-    </div>
-
-    <div class="icon_photoshop">
-        <strong>Photoshop</strong><br>
-        <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
-    </div>
-
-    <div class="icon_ilustration">
-        <strong>Ilustração</strong><br>
-        <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
-    </div>
-
-    <div class="icon_html">
-        <strong>HTML</strong><br>
-        <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
-    </div>
-
-    <div class="icon_shell">
-        <strong>Shell Script</strong><br>
-        <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
-    </div>
-               
 </div>
 
 </body>
