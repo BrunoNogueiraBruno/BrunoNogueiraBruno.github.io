@@ -12,17 +12,18 @@
         }
 
         .container {
-            position: solid;
-            height: 450px;
+            position: relative;
+            padding: 1em;
+            height: 20vmax;
             background-color: whitesmoke;
 
         }
 
         .container h1 {
             position: relative;
-            top: 30px;
+            margin-top: 40px;
             text-align: center;
-            font-size: 2.5em;
+            font-size: 200%;
             font-family: serif;
             letter-spacing: 10px;
             color: #3a302c;
@@ -47,34 +48,28 @@
         }
 
         .nav-bar {
+            height: 56px;
             text-align: center;
-            top: 0;
             width: 100%;
             position: fixed;
             background-color:#3a302c;
-            padding: 10px;
+            
             color: whitesmoke;
             z-index: 9999;
         }
 
         .nav-bar a {
+            position: relative;
+            padding: 5vw;
+            top: 13px;
             font-size: 1.5em;
             text-decoration: none;
             color: whitesmoke;
-
-        }
-        
-        .nav-bar spam {
-            margin: 50px;
         }
 
-        .bar {
-            height: 10px;
-            background-color: #3a302c;
-        }
-       
 
         .foto-perfil {
+            position: relative;
             border-radius: 50%;
 
         }
@@ -113,7 +108,7 @@
 
 
         .bg-image {
-            height: 300px;
+            height: 100vh;
             background-color: #3a302c;
             background-image: url("https://img.elo7.com.br/product/original/D9038B/quadro-5x30cm-mapas-antigos-quarto.jpg");
             background-attachment: fixed;
@@ -121,9 +116,16 @@
             opacity: 0.6;
         }
 
+        .content {
+            position: relative;
+            margin: 6vw;
+            padding: 60px;
+            background-color: rgba(255, 255, 255, 0.8)
+        }
+
         .exp {
             padding: 30px;
-            height: 130px;
+            height: 17vh;
             background-color: whitesmoke;
         }
 
@@ -145,6 +147,7 @@
             float: left;
         }
 
+        
 
     </style>
 
@@ -154,7 +157,6 @@
 
     <div class="nav-bar">
     <a href="#top"> Quem sou eu</a>
-    <spam>|</spam>
     <a href="#passei">Por onde passei</a><br>
     </div>
 
@@ -185,7 +187,7 @@
     <div class="faco">
             <div class="icon_pixel-art">
                 <strong>Pixel Art</strong><br>
-                <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
+                <a href="#content_pixel-art"><img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado"></a>
             </div>
         
             <div class="icon_photoshop">
@@ -221,6 +223,24 @@
 
 
     <div class="bg-image">       
+
+        <div class="content">
+            <h2 id="content_pixel-art">Pixel Art</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+        <div class="content">
+            <h2 id="content_photoshop">Photoshop</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
     </div>
 
     <div class="bar"></div>
@@ -238,7 +258,6 @@
                 <img src="./trybe.png" width="105px"></a>
             </div>
 
-        
 </div>
 
     
