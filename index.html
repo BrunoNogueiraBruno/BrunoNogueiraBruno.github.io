@@ -4,73 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Bruno Nogueira</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            position: solid;
+            height: 450px;
+            background-color: whitesmoke;
+
+        }
+
+        .container h1 {
+            position: relative;
+            top: 30px;
+            text-align: center;
+            font-size: 2.5em;
+            font-family: serif;
+            letter-spacing: 10px;
+            color: #3a302c;
+        }
+
+        .sobre {
+            padding: 30px;
+            text-align: justify;
+        }
+
+        .basic-info {
+            padding: 30px;
+            text-align: center;
+            float: left;
+        }
+
+        .basic-info p {
+            font-size: 20px;
+        }
+        .basic-info b {
+            color:brown;
+        }
+
+        .nav-bar {
+            text-align: center;
+            top: 0;
+            width: 100%;
+            position: fixed;
+            background-color:#3a302c;
+            padding: 10px;
+            color: whitesmoke;
+            z-index: 9999;
+        }
+
+        .nav-bar a {
+            font-size: 1.5em;
+            text-decoration: none;
+            color: whitesmoke;
+
+        }
+        
+        .nav-bar spam {
+            margin: 50px;
+        }
+
+        .bar {
+            height: 10px;
+            background-color: #3a302c;
+        }
+       
+
+        .foto-perfil {
+            border-radius: 50%;
+
+        }
+
+
+        .faco {
+            text-align: center;
+            width: 100%;
+
+        }
+
+        .icon_pixel-art {
+            position: relative;
+            float: left;
+        }
+
+        .icon_photoshop {
+            position: relative; 
+            float: left;
+        }
+
+        .icon_ilustration {
+            position: relative;
+            float:left;
+        }
+
+        .icon_html {
+            position: relative;
+            float:left;
+        }
+
+        .icon_shell {
+            position: relative;
+            float:left;
+        }
+
+
+        .bg-image {
+            height: 300px;
+            background-color: #3a302c;
+            background-image: url("https://img.elo7.com.br/product/original/D9038B/quadro-5x30cm-mapas-antigos-quarto.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            opacity: 0.6;
+        }
+
+        .exp {
+            padding: 30px;
+            height: 130px;
+            background-color: whitesmoke;
+        }
+
+        .exp h2 {
+            margin: 0 0;
+            position: overlay;
+            font-size: 1.5em;
+        }
+
+        .logo_trybe {
+            margin: 0;
+            position: relative;
+            float: left;
+        }
+
+        .logo_unoeste {
+            margin: 0;
+            position: relative;
+            float: left;
+        }
+
+
+    </style>
+
+
 </head>
 <body>
-    <center>
+
+    <div class="nav-bar">
+    <a href="#top"> Quem sou eu</a>
+    <spam>|</spam>
+    <a href="#passei">Por onde passei</a><br>
+    </div>
+
+
+<div class="container">
+
     <h1>Bruno Leonardo Nogueira</h1>
-    <a href="#sobre">Quem sou eu</a> | 
-    <a href="#faco">O que eu faço</a> |
-    <a href="#passei">Por onde passei</a><br><br>
+    <div class="basic-info">
 
-    <img src="./perfil.jpg" width="200px" alt="Foto de Bruno Leonardo Nogueira">
-    <h2 id="sobre">Quem sou eu</h2>
-    <p><em><b>B</b>rasileiro natural de <b>P</b>residente <b>P</b>rudente - <b>SP</b></em>, <strong>Historiador</strong> por formação (2017-2020) <br>e futuro <strong>Desenvolvedor</strong> (2020-2021).</p>
+
+    <img src="./perfil.jpg" class="foto-perfil" width="200px" alt="Foto de Bruno Leonardo Nogueira">
+    <h2>Quem sou eu</h2>
+    <p><em><b>B</b>rasileiro nascido em <b>1999</b>, natural de <b>P</b>residente <b>P</b>rudente - <b>SP</b></em><br> <strong>Historiador</strong> de formação (2017-2020) e futuro <strong>Desenvolvedor</strong> (2020-2021)</p>
     
-    <br>
-    <hr>
-    <h2 id="faco">O que eu faço</h2>
+    </div>
 
-    <table>
-        <tr>
-            <th>
-                <strong>Pixel Art</strong>
-            </th>
-            <th>
-                Photoshop 
-            </th>
-            <th>
-                <strong>Ilustração</strong>
-            </th>
-            <th>
-                Html 
-            </th>
-            <th>
-                Shell Script
-            </th>
-        </tr>
 
-        <tr>
-            <th>
+    <div class="sobre">
+
+        <h2>Lorem Ipsum</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+
+    <div class="faco">
+            <div class="icon_pixel-art">
+                <strong>Pixel Art</strong><br>
                 <img src="./icon_pixel.png" alt="Ícone de coração em píxel, arte nível avançado">
-            </th>
-            <th>
+            </div>
+        
+            <div class="icon_photoshop">
+                <strong>Photoshop</strong><br>
                 <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
-            </th>
-            <th>
+            </div>
+        
+            <div class="icon_ilustration">
+                <strong>Ilustração</strong><br>
                 <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
-            </th>
-            <th>
+            </div>
+        
+            <div class="icon_html">
+                <strong>HTML</strong><br>
                 <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
-            </th>
-            <th>
+            </div>
+        
+            <div class="icon_shell">
+                <strong>Shell Script</strong><br>
                 <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
-            </th>
-        </tr>
-    </table>
-    
-    <h2 id="passei">Por onde passei</h2>
+            </div>
+                       
+        </div>
+    </div>
 
-    <table>
-        <tr>
-            <th><a href="https://www.betrybe.com/" target="_blank" alt="Logo da Trybe">
-                <img src="./trybe.png" width="100px"></a></th>
-            <th><a href="https://www.unoeste.br/" target="_blank" alt="Logo da Universidade do Oeste Paulista">
-                <img src="./unoeste.png" width="100px"></a></th>
-        </tr>
-    </table>
-    
-    </center>
 
+
+</div>
+
+
+<div class="bar"></div>
+
+
+
+    <div class="bg-image">       
+    </div>
+
+    <div class="bar"></div>
+    
+    <div class="exp">
+
+        <em><h2 id="passei">Por onde eu passei....</h2></em>
+
+        <div class="logo_unoeste">
+        <a href="https://www.unoeste.br/" target="_blank" alt="Logo da Universidade do Oeste Paulista">
+            <img src="./unoeste.png" width="105px"></a>
+        </div>
+        <div class="logo_trybe">
+            <a href="https://www.betrybe.com/" target="_blank" alt="Logo da Trybe">
+                <img src="./trybe.png" width="105px"></a>
+            </div>
+
+        
+</div>
+
+    
 
 
 </body>
