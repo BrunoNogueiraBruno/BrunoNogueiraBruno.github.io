@@ -9,12 +9,14 @@
 
         body {
             margin: 0;
+            background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/piles-of-wood-royalty-free-image-106548715-1531507536.jpg");
+            background-position: center;
         }
 
         .container {
             position: relative;
+            height: 420px;
             padding: 1em;
-            height: 20vmax;
             background-color: whitesmoke;
 
         }
@@ -30,12 +32,17 @@
         }
 
         .sobre {
-            padding: 30px;
+            position: relative;
+            width: 45%;
+            left: 50%;
+            padding-left: 30px;
             text-align: justify;
         }
 
         .basic-info {
-            padding: 30px;
+            position: absolute;
+            width: 50vw;
+            padding: 0px;
             text-align: center;
             float: left;
         }
@@ -67,23 +74,39 @@
             color: whitesmoke;
         }
 
+        .bar {
+            position: relative;
+            height: 1vh;
+            background-color: #3a302c;
+        }
+
+        .bar_inf {
+            margin-bottom: 0%s;
+            height: 1vh;
+            background-color: #3a302c;
+        }
+
 
         .foto-perfil {
-            position: relative;
             border-radius: 50%;
+            width: 15vw;
+            height: auto;
 
         }
 
 
         .faco {
+            position: relative;
+            margin-top: 8vh;
+            margin-left: 50vw;
             text-align: center;
-            width: 100%;
 
         }
 
         .icon_pixel-art {
             position: relative;
             float: left;
+            
         }
 
         .icon_photoshop {
@@ -106,21 +129,18 @@
             float:left;
         }
 
-
-        .bg-image {
-            height: 100vh;
-            background-color: #3a302c;
-            background-image: url("https://img.elo7.com.br/product/original/D9038B/quadro-5x30cm-mapas-antigos-quarto.jpg");
-            background-attachment: fixed;
-            background-position: center;
-            opacity: 0.6;
+        .content {
+            background-color: rgba(71, 56, 49, 0.575);
+            color: whitesmoke;
+            position: relative;
+            margin-left: 4vw;
+            margin-right: 4vw;
+            margin-bottom: 4vw;
+            padding: 1vw;
         }
 
-        .content {
-            position: relative;
-            margin: 6vw;
-            padding: 60px;
-            background-color: rgba(255, 255, 255, 0.8)
+        .content p {
+            font-size: 1.4em;
         }
 
         .exp {
@@ -162,12 +182,12 @@
 
 
 <div class="container">
+    <h1>Bruno L. Nogueira</h1>
+    <div class="basic-info"> 
 
-    <h1>Bruno Leonardo Nogueira</h1>
-    <div class="basic-info">
+    <img src="./perfil.jpg" class="foto-perfil" alt="Foto de Bruno Leonardo Nogueira">
 
 
-    <img src="./perfil.jpg" class="foto-perfil" width="200px" alt="Foto de Bruno Leonardo Nogueira">
     <h2>Quem sou eu</h2>
     <p><em><b>B</b>rasileiro nascido em <b>1999</b>, natural de <b>P</b>residente <b>P</b>rudente - <b>SP</b></em><br> <strong>Historiador</strong> de formação (2017-2020) e futuro <strong>Desenvolvedor</strong> (2020-2021)</p>
     
@@ -192,22 +212,22 @@
         
             <div class="icon_photoshop">
                 <strong>Photoshop</strong><br>
-                <img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário">
+                <a href="#content_photoshop"><img src="./icon_photoshop.png" alt="Ícone do Photoshop em píxel arte, nível intermediário"></a>
             </div>
         
             <div class="icon_ilustration">
                 <strong>Ilustração</strong><br>
-                <img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário">
+                <a href="#content_ilustration"><img src="./icon_ilustration.png" alt="Ícone de pincel em píxel arte, nível intermediário"></a>
             </div>
         
             <div class="icon_html">
                 <strong>HTML</strong><br>
-                <img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante">
+                <a href="#content_html"><img src="./icon_html.png" alt="Ícone do HTML5 em pixel art, nível iniciante"></a>
             </div>
         
             <div class="icon_shell">
                 <strong>Shell Script</strong><br>
-                <img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante">
+                <a href="#content_shell"><img src="icon_shell.png" alt="Ícone de terminal em pixel art, nível iniciante"></a>
             </div>
                        
         </div>
@@ -218,11 +238,8 @@
 </div>
 
 
-<div class="bar"></div>
-
-
-
-    <div class="bg-image">       
+<div class="bar_inf"></div>
+   
 
         <div class="content">
             <h2 id="content_pixel-art">Pixel Art</h2>
@@ -231,17 +248,36 @@
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-        </div>
-
-        <div class="content">
+    
             <h2 id="content_photoshop">Photoshop</h2>
         <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  
+            <h2 id="content_ilustration">Ilustração</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+            <h2 id="content_html">HTML</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+  
+            <h2 id="content_shell">Shell Script</h2>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
         </div>
-    </div>
+    
 
     <div class="bar"></div>
     
