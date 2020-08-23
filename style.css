@@ -15,8 +15,16 @@ body {
     }
 }
 
+.nav-bar {
+    z-index: 9999;
+    position: fixed;
+    height: 8vh;
+    width: 100%;
+    text-align: center;
+    background-color: hsla(120,0%,0%,0.6);
+}
+
 .header {
-    position: relative;
     width: 100%;
     text-align: center;
     background-color: hsla(120,0%,0%,0.6);
@@ -25,7 +33,6 @@ body {
 .header img {
     position: relative;
     border-radius:50%;
-    width: 15%;
 }
 
 .header h1 {
