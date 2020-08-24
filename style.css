@@ -22,9 +22,18 @@ body {
     width: 100%;
     text-align: center;
     background-color: hsla(120,0%,0%,0.6);
+    animation: nav-bar 1s;
+    border-bottom: 1px solid rgba(255,255,255,0.3)
+}
+
+@keyframes nav-bar {
+    from {
+        transform: translateY(-100px);
+    }
 }
 
 .header {
+    height: 23rem;
     width: 100%;
     text-align: center;
     background-color: hsla(120,0%,0%,0.6);
@@ -36,7 +45,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2.5em;
+    font-size: 2.2em;
     font-family: 'Nova Mono', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     opacity: 0.9;
@@ -45,7 +54,7 @@ body {
 .arrow-down {
     width: 0; 
     height: 0; 
-    border-left: 50vw solid transparent;
+    border-left: 49vw solid transparent;
     border-right: 47vw solid transparent;
     border-top: 8vh solid hsla(120,0%,0%,0.6);
 }
