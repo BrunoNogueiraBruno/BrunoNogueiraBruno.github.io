@@ -7,19 +7,38 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("./space.jpg");
-    background-position: center;
     text-align: center;
-    background-attachment: fixed;
+    background-position: center;
+    background-size: 310%;
 }
 
 
-/*Mobile media queries*/
-@media (min-width: 650px)
+/*Media queries*/
+
+/*Tablets*/
+@media (min-width: 600px)
 {
     body {
-        background-size: 100%;
+        background-size: 230%;
     }
 }
+
+/*Computers*/
+@media (min-width: 900px)
+{
+    body {
+        background-size: 145%;
+    }
+}
+
+/*Televisions*/
+@media (min-width: 1240px)
+{
+    body {
+        background-size: 105%;
+    }
+}
+/*//////////////////////////*/
 
 /*Fixed nav-bar configuration*/
 .nav-bar {
@@ -29,7 +48,7 @@ body {
     height: 8vh;
     width: 100%;
     text-align: center;
-    background-color: hsla(120,0%,0%,0.6);
+    background-color: hsla(120,0%,0%,0.2);
     animation: nav-bar 1s;
     border-bottom: 1px solid rgba(255,255,255,0.3)
 }
@@ -58,10 +77,11 @@ body {
     opacity: 0.9;
 }
 
+/*//////////////////////////*/
+
 /*Fingerprint animated scroll configuration*/
 .fingerprint-circle {
     stroke: #e5e5e5;
-    width: 30mm;
     opacity: 0.6;
 }
 
@@ -78,6 +98,7 @@ body {
     50% {
         transform: translateY(-2px);
         opacity: 0;
+        stroke: lawngreen;
     }
     100% {
         transform: translateY(-6px);
@@ -86,17 +107,19 @@ body {
 }
 /*//////////////////////////*/
 
-/*This div is just for spacing*/
-.space-div {
-    height: 10vh;
-}
-/*//////////////////////////*/
-
 /*Container configurations*/
 .container {
-    padding: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color:#202124;
     color: white;
     text-align: center;
+}
+
+.container img {
+    height: 20vw;
+    margin: 30px;
+    border-radius: 2%;
 }
 /*//////////////////////////*/
