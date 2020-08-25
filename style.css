@@ -169,8 +169,8 @@ body {
 }
 
 .container {
-    height: 45vw;
-    padding: 30px;
+    height: auto;
+    padding: 40px;
     background-color:#202124;
     color: white;
     text-align: center;
@@ -179,23 +179,28 @@ body {
 .container h2 {
     margin: 0;
 }
-
-.path-photo {margin-bottom: 30px;
-    width: 30vw;
+.path-photo {
+    margin: 10px;
+    width: 28vw;
     height: auto;
     border-radius: 3%;
     float: left;
 }
 
 .path-text {
-    padding: 15px;
+    padding-left: 15px;
     text-align: justify;
-    width: 60vw;
+}
+
+.before-img {
+    width: 62vw;
     display: inline-block;
 }
 
-.path-text p {
-    font-size: 1.6vw;
+.path-text p{
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 135%;
 }
 /*//////////////////////////*/
 
