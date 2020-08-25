@@ -168,7 +168,7 @@ body {
 }
 
 .container {
-    margin-bottom: -20px;
+    height: 45vw;
     padding: 30px;
     background-color:#202124;
     color: white;
@@ -178,10 +178,30 @@ body {
 .container h2 {
     margin: 0;
 }
+
+.path-photo {margin-bottom: 30px;
+    display: inline-block;
+    width: 30vw;
+    height: auto;
+    border-radius: 3%;
+    float: left;
+}
+
+.path-text {
+    padding: 15px;
+    text-align: justify;
+    width: 60vw;
+    display: inline-block;
+}
+
+.path-text p {
+    font-size: 1.6vw;
+}
 /*//////////////////////////*/
 
 /*Footer*/
 .footer {
+    clear: both;
     height: 10vh;
     background-color: black;
     padding: 10px;
@@ -190,4 +210,5 @@ body {
 .footer h2 {
     color: white;
 }
+
 /*//////////////////////////*/
