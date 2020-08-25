@@ -50,7 +50,7 @@ body {
     text-align: center;
     background-color: hsla(120,0%,0%,0.2);
     animation: nav-bar 1s;
-    border-bottom: 1px solid rgba(255,255,255,0.3)
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 @keyframes nav-bar {
@@ -68,50 +68,46 @@ body {
     
 }
 
-.header h2 {
-    margin-top: 10vh;
-    font-size: 1.8em;
-    font-family: 'Nova Mono', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: white;
-    opacity: 0.9;
-}
-
-.skills-sec {
-    display: inline-block;
-    width: 40%;
-    text-align: center;
-}
-/*Skill icons*/
-.skill-icons {
-    display: inline-block;
-    width: 15%;
-}
-
-.skill-icons img {
-    width: 80%;
-}
-.skill-icons h3 {
+.header h3, p{
     margin: 0;
-    font-size: 1em;
+    font-size: 1.2vw;
     color: white;
     opacity: 0.9;
 }
 
+.header p {
+    font-size: 1.7vw;
+}
 
+.header strong {
+    color:yellow;
+}
 
+.header span { 
+    font-size: 1.3vw;
+}
 
 .profile-sec {
+    background-color: hsla(120,0%,0%,0.5);
+    padding: 5px;
     position: relative;
-    top: 15vh;
+    top: 13vh;
     display: inline-block;
+    border-radius: 50%;
 }
 
 .profile-sec img {
+    height: 14.7vw;
     border-radius:50%;
 }
 
 .about-sec {
+    background-color: hsla(120,0%,0%,0.4);
+    position: relative;
+    top: 10vh;
+    padding: 5px;
     display: inline-block;
+    text-align: justify;
     width: 40%;
 }
 /*//////////////////////////*/
@@ -119,11 +115,9 @@ body {
 
 /*Name and Fingerprint section*/
 .name-sec {
-    margin-top: 10%;
+    margin-top: 15vh;
 }
-
 .name-sec h1 {
-    margin-top: 10vh;
     font-size: 2.2em;
     font-family: 'Nova Mono', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
@@ -161,18 +155,26 @@ body {
 /*//////////////////////////*/
 
 /*Container configurations*/
+
+/*Skill icons*/
+.skill-icons {
+    display: inline-block;
+    text-align: center;
+}
+
+.skill-icons img {
+    height: 20vh;
+    margin-bottom: -20px;
+}
+
 .container {
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 30px;
     background-color:#202124;
     color: white;
     text-align: center;
 }
 
-.container img {
-    height: 20vw;
-    margin: 30px;
-    border-radius: 2%;
+.container h2 {
+    margin: 0;
 }
 /*//////////////////////////*/
