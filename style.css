@@ -49,7 +49,7 @@ body {
     height: 8vh;
     width: 100%;
     text-align: center;
-    background-color: hsla(120,0%,0%,0.2);
+    background-color: hsla(120,0%,0%,0.4);
     animation: nav-bar 1s;
     border-bottom: 1px solid rgba(255,255,255,0.3);
 }
@@ -61,11 +61,30 @@ body {
 }
 
 .social-sec {
+    display: inline-block;
     height: 90%;
     padding: 0.1%;
 }
 .social-sec img {
     height: 100%;
+}
+
+.int-links {
+    position: relative;
+    top: -60%;
+    display: inline-block;
+    height: 90%;
+    width: 40%;
+}
+
+.int-links a {
+    font-weight: bold;
+    font-size: 150%;
+    color: white;
+    position: relative;
+    top: 35%;
+    margin-left: 20px;
+    text-decoration: none;
 }
 /*//////////////////////////*/
 
