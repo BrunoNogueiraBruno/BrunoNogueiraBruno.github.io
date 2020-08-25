@@ -168,6 +168,7 @@ body {
 }
 
 .container {
+    margin-bottom: -20px;
     padding: 30px;
     background-color:#202124;
     color: white;
@@ -176,5 +177,17 @@ body {
 
 .container h2 {
     margin: 0;
+}
+/*//////////////////////////*/
+
+/*Footer*/
+.footer {
+    height: 10vh;
+    background-color: black;
+    padding: 10px;
+}
+
+.footer h2 {
+    color: white;
 }
 /*//////////////////////////*/
