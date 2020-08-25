@@ -59,6 +59,14 @@ body {
         transform: translateY(-100px);
     }
 }
+
+.social-sec {
+    height: 90%;
+    padding: 0.1%;
+}
+.social-sec img {
+    height: 100%;
+}
 /*//////////////////////////*/
 
 
@@ -80,7 +88,7 @@ body {
     font-size: 1.7vw;
 }
 
-.header strong {
+strong {
     color:yellow;
 }
 
@@ -212,7 +220,7 @@ body {
     padding: 10px;
 }
 
-.footer h2 {
+.footer h3 {
     color: white;
 }
 
