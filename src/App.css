@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
 .App {
-  text-align: center;
+  background-image: url('./images/background-image.jpg');
+  background-position: -40px;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.header-container {
   align-items: center;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
+.profile-pic {
+  border-radius: 50%;
+  height: 50vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-name {
+  color: #FFF3D9;
+  text-decoration: none;
+  text-shadow: 0 0 4px black;
+  font-size: 1.3rem;
+  font-family: 'Nova Round', cursive;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  height: 30vh;
+}
+
+.nav-links {
+  align-items: center;
+  text-decoration: none;
+  color: #3b0918d8;
+  display: flex;
+  font-size: 1.6em;
+  font-weight: 600;
+  justify-content: center;
+  width: 50vw;
+}
+
+.separator {
+  background-color:  #3b09188e;
+  border-radius: 2rem;
+  height: 70%;
+  width: 1vw;
 }
